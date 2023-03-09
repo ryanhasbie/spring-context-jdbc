@@ -12,9 +12,9 @@ import java.util.List;
 public class Main {
     public static void main(String[] args) {
 //        production
-//        AnnotationConfigApplicationContext ctx = new AnnotationConfigApplicationContext();
-//        ctx.register(BeanConfigurationProd.class);
-//        ctx.refresh();
+        AnnotationConfigApplicationContext ctx = new AnnotationConfigApplicationContext();
+        ctx.register(BeanConfigurationProd.class);
+        ctx.refresh();
 
 //        getAll
 //        IBookService iBookService = ctx.getBean(IBookService.class);
@@ -62,6 +62,7 @@ public class Main {
 //        List<Book> books = List.of(book1, book2);
 //        bookService.createBulk(books);
 
+
 //        local
 //        AnnotationConfigApplicationContext ctx = new AnnotationConfigApplicationContext();
 //        ctx.register(BeanConfigurationDev.class);
@@ -74,5 +75,55 @@ public class Main {
 //        pengabdiSetan.setPublicationYear("2018");
 //        pengabdiSetan.setAuthor("Djoko Anwar");
 //        bookService.create(pengabdiSetan);
+
+//        // create bulk
+//        IBookService bookService = ctx.getBean(IBookService.class);
+//        Book book1 = new Book("123", "Apa ajah", "PT. Abc", "2012", "Goku");
+//        Book book2 = new Book("456", "Rahasia", "PT. Sjh", "2014", "Ryan");
+//        List<Book> books1 = List.of(book1, book2);
+//        bookService.createBulk(books1);
+
+        // create
+//        IBookService bookService = ctx.getBean(IBookService.class);
+//        Book book = new Book();
+//        book.setTitle("Ada aja");
+//        book.setPublisher("PT. Abc");
+//        book.setPublicationYear("2013");
+//        book.setAuthor("Aku");
+//        bookService.create(book);
+
+        // update
+//        bookService = ctx.getBean(IBookService.class);
+//        Book book = new Book();
+//        book.setTitle("Ada aja");
+//        book.setPublisher("PT. Abc");
+//        book.setPublicationYear("2013");
+//        book.setAuthor("Aku");
+//        bookService.update(book,"456");
+
+        // delete
+//        bookService = ctx.getBean(IBookService.class);
+//        bookService.delete("456");
+
+        // findBy title
+//        try {
+//            bookService = ctx.getBean(IBookService.class);
+//            Book book = bookService.findByTitle("Apa ajah");
+//            System.out.println(book);
+//        } catch (Exception e) {
+//            System.out.println(e.getMessage());
+//        }
+
+
+
+
+//       getAll
+//        IBookService iBookService = ctx.getBean(IBookService.class);
+//        List<Book> books = iBookService.list();
+//        System.out.println(books.size());
+//        for (Book book3 : books) {
+//            System.out.println(book3.toString());
+//        }
+
     }
 }

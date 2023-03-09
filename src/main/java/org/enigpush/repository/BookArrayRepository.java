@@ -66,6 +66,6 @@ public class BookArrayRepository implements IBookRepository {
 
     @Override
     public void createBulk(List<Book> books) throws Exception {
-        books.addAll(books);
+        this.books.addAll(books);
     }
 }
