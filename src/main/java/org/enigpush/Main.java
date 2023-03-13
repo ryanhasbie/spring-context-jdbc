@@ -16,13 +16,6 @@ public class Main {
         ctx.register(BeanConfigurationProd.class);
         ctx.refresh();
 
-//        getAll
-//        IBookService iBookService = ctx.getBean(IBookService.class);
-//        List<Book> books = iBookService.list();
-//        System.out.println(books.size());
-//        for (Book book : books) {
-//            System.out.println(book.toString());
-//        }
 
 //          Create
 //        IBookService bookService = ctx.getBean(IBookService.class);
@@ -32,6 +25,14 @@ public class Main {
 //        pengabdiSetan.setPublicationYear("2018");
 //        pengabdiSetan.setAuthor("Djoko Anwar");
 //        bookService.create(pengabdiSetan);
+
+        //        getAll
+//        IBookService iBookService = ctx.getBean(IBookService.class);
+//        List<Book> books = iBookService.list();
+//        System.out.println(books.size());
+//        for (Book book : books) {
+//            System.out.println(book.toString());
+//        }
 
 //        findByTitle
 //        try {
